@@ -6,27 +6,43 @@ body {
     
 }
 
+
+
 header {
     background-color: #063C5E;
     width: 100%;
-    height: 100%;  
+    height: 100%; 
+    padding-bottom: 5px; 
     
 }
 
 header nav {
     width: 350px;
+    
+}
+
+.nav-list {
+    list-style-type: none;
+
+
 }
 
 header li a {
     color: white;
-    list-style: none;
+    list-style-type: none;
     
 }
 
-footer {
+
+.footer-container {
     background-color: #063C5E;
-    color: white
-   
+    box-sizing: border-box;
+    border-top: solid;
+    border-color:#FCCF14;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    
 }
 
 footer img {
@@ -55,8 +71,8 @@ h1 {
     border-color: #FCCF14;
     border-style:solid;
     border-radius: 40px 40px;
-    padding: 20px 40px;
-    margin: 20px 40px;
+   /* padding: 20px 40px;*/
+    margin: 20px auto;
     text-align: center;
     
 
@@ -73,7 +89,7 @@ h1 {
 }
 
 .about-text {
-    width:500px;
+    width:100%;
     height: 100%;
     box-sizing: border-box;
     background: white;
