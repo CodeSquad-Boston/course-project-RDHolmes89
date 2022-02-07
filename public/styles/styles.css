@@ -3,14 +3,25 @@ body {
     max-width: 100vw;
     margin: 0;
     overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
     
 }
-/*Teal: #006B6B
-Light Teal: #009E9E
-Yellow: #FCCF14
-Blue: #063C5E
-Grey: #C2C2C2
-White: #FFFFFF*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        background-color: var(--teal);
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        background-color: var(--light-teal);
+    }
+}
+/*desktop*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        background-color: var(--blue);
+    }
+}
 :root {
     --teal: #006b6b;
     --light-teal: #009e9e;
@@ -31,6 +42,7 @@ header {
     padding-bottom: 5px; 
     padding-top: 5px;
     display: flex;
+    font-family: 'Fredericka the Great', cursive;
 
 }
 
@@ -46,6 +58,7 @@ header img {
     /*padding-inline: 50px;*/
     display: flex;
     flex-direction: row-reverse;
+    font-family: 'Fredericka the Great', cursive;
     
     
 }
@@ -54,8 +67,6 @@ header li a {
     color: var(--white);
     list-style-type: none;
     text-decoration: none;
-
-    
 }
 
 .background-container {
@@ -63,6 +74,8 @@ header li a {
     background-image:linear-gradient(180deg, #c2c2c2, #009e9e,  #006b6b);
     border-style: none;
     padding:45px;
+    /*display: flex;*/
+    
     
 }
 
@@ -73,8 +86,9 @@ header li a {
     padding: 50px;
     margin: 50px;
     background-color: var(--white);
-    /*display: flex;*/
-
+    font-family: 'Fredericka the Great', cursive;
+    display: flex-inline;
+    flex-grow: 3;
 
    
 }
@@ -82,12 +96,14 @@ header li a {
 .display-container h2, h3, h4 {
     text-align: center;
     color:var(--blue)
+    
 }
 
 
 .inside-container {
     text-align: center;
-    
+    font-family: 'Open Sans', sans-serif;
+    /*display: flex;*/
 }
 
 .inside-container p {
@@ -231,6 +247,7 @@ a:hover{
     display: flex;
     justify-content: space-evenly;
     /*border: 2px solid red;*/
+    font-family: 'Fredericka the Great', cursive;
     
 }
 
@@ -245,7 +262,8 @@ a:hover{
 
 footer div {
        display: inline-block;
-     /* border: 2px solid rgb(179, 255, 0);*/
+      /*border: 2px solid rgb(179, 255, 0);*/
+      
 }
 
 
@@ -256,10 +274,7 @@ footer img {
 footer li, a {
     color: var(--white);
     list-style-type: none;
-    text-decoration: none;
-    
-    
-    
+    text-decoration: none;    
 }
 
 h1 {
@@ -289,10 +304,7 @@ h1 {
     border-color: var(--white);
     border-style:solid; 
     border-radius: 40px 40px;
-    display: flex-inline;
-   
-        
-     
+    display: flex-inline;   
 }
 
 .about-text {
@@ -307,6 +319,4 @@ h1 {
     text-align: left;
     list-style-type: none;
     display: flex-inline;
-    
-
 }
