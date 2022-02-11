@@ -3,14 +3,26 @@ body {
     max-width: 100vw;
     margin: 0;
     overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    
     
 }
-/*Teal: #006B6B
-Light Teal: #009E9E
-Yellow: #FCCF14
-Blue: #063C5E
-Grey: #C2C2C2
-White: #FFFFFF*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        background-color: var(--teal);
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        background-color: var(--light-teal);
+    }
+}
+/*desktop*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        background-color: var(--blue);
+    }
+}
 :root {
     --teal: #006b6b;
     --light-teal: #009e9e;
@@ -18,6 +30,7 @@ White: #FFFFFF*/
     --blue: #063c5e;
     --grey: #c2c2c2;
     --white: #ffffff;
+    font-size: 1.4em;    
 }
 
 
@@ -30,24 +43,38 @@ header {
     height: 100%; 
     padding-bottom: 5px; 
     padding-top: 5px;
+    display: flex;
+    font-family: 'Fredericka the Great', cursive;  
+    
 }
+header ul {
+    border: red solid 2px;
+   display: inline-flex;
+    
 
+}
 header img {
-    width: 350px;
-    height: auto;
-  
+    width: 21.875rem;
+    height:auto
+    
 }
 
 .nav-container li {
     list-style-type: none;
-    display: inline-block;
-    padding-inline: 50px;
+    /*display: inline-block;*/
+    /*padding-inline: 50px;*/
+    /*display: flex;*/
+    /*flex-direction: row-reverse;*/
+    font-family: 'Fredericka the Great', cursive;
+    
+    
 }
 
 header li a {
     color: var(--white);
     list-style-type: none;
     text-decoration: none;
+      
 }
 
 .background-container {
@@ -55,6 +82,8 @@ header li a {
     background-image:linear-gradient(180deg, #c2c2c2, #009e9e,  #006b6b);
     border-style: none;
     padding:45px;
+    /*display: flex;*/
+    
     
 }
 
@@ -65,18 +94,21 @@ header li a {
     padding: 50px;
     margin: 50px;
     background-color: var(--white);
+    font-family: 'Fredericka the Great', cursive;
    
 }
 
 .display-container h2, h3, h4 {
     text-align: center;
     color:var(--blue)
+    
 }
 
 
 .inside-container {
     text-align: center;
-
+    font-family: 'Open Sans', sans-serif;
+    /*display: flex;*/
 }
 
 .inside-container p {
@@ -88,17 +120,93 @@ header li a {
     background-color: var(--yellow);
 }
 
-.inside-container-index img {
-    width: 200px;
-    height: 100%
-}
-.inside-container-index button {
-    background-color: var(--yellow);
+.inside-container-index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
 }
 
-.inside-container-index a {
-    color: purple;
-    
+.inside-container-index img {
+    width: 200px;
+    height: 100%;   
+}
+
+
+.inside-container-index button {
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.inside-container-index-1 {
+    display: flex;
+    flex-direction: column;
+    color: var(--blue);   
+}
+.inside-container-index-2 {
+    display: flex;
+    flex-direction: column;
+    color: var(--blue);  
+}
+
+.inside-container-index-3 {
+    display:flex;
+    flex-direction: column;
+    color: var(--blue); 
+}
+.inside-container-index-4 {
+    display: flex;
+    flex-direction: column;
+    color: var(--blue);  
+}
+.inside-container-index-5 {
+    display: flex;
+    flex-direction: column;
+    color: var(--blue); 
+}
+.inside-container-index-6 {
+    display: flex;
+    flex-direction: column;
+    color: var(--blue); 
+}
+
+.inside-container-index-7 {
+    display: flex;
+    flex-direction: column;
+    color: var(--blue); 
+}
+
+.inside-container-index-8 {
+    display: flex;
+    flex-direction: column;
+    color: var(--blue); 
+}
+
+.inside-container-index-9 {
+    display: flex;
+    flex-direction: column;
+    color: var(--blue); 
+}
+
+.inside-container-index-10 {
+    display: flex;
+    flex-direction: column;
+    color: var(--blue); 
+}
+
+.inside-container-index-11 {
+    display: flex;
+    flex-direction: column;
+    color: var(--blue); 
+}
+
+.inside-container-index-12 {
+    display: flex;
+    flex-direction: column;
+    color: var(--blue); 
 }
 
 .inside-container-admin th {
@@ -114,14 +222,23 @@ header li a {
     background-color: var(--yellow);
     text-align: center;
 }
-
-
-.footer-back-container {
+/*for link colors*/
+/*a:link{
+    color:var(--blue);
+}
+a:visted{
+    color: var(--blue);
+}*/
+a:hover{
+    color:var(--teal);
+    font-display: bold; 
+}
+/*.footer-back-container {
     box-sizing: border-box;
     background-image:linear-gradient(#006b6b, #009e9e,  #ffffff);
     border-style: none;
     padding-bottom: 150px;
-}
+}*/
 
 .footer-container {
     background-color: var(--blue);
@@ -132,8 +249,10 @@ header li a {
     height: 100%;
     color: var(--white);
     padding-bottom: 150px;
-    /*display: flex;
+   /* display: flex;
+    justify-content: space-evenly;
     /*border: 2px solid red;*/
+    font-family: 'Fredericka the Great', cursive;
     
 }
 
@@ -141,12 +260,18 @@ header li a {
     color: var(--yellow);
    list-style-type: none;
    font-display: bold;
+   
+   /*display: flex;
+   justify-content: space-evenly;
    /*border: 2px solid red;*/
 }
 
-footer div {
-       display: inline-block;
-     /* border: 2px solid rgb(179, 255, 0);*/
+footer {
+    display: flex;
+    justify-content: space-around;
+    
+    border: 2px solid rgb(179, 255, 0);*/
+      
 }
 
 
@@ -158,10 +283,8 @@ footer li, a {
     color: var(--white);
     list-style-type: none;
     text-decoration: none;
-    
-    
-    
 }
+
 
 h1 {
     /*for queer title*/
@@ -180,19 +303,17 @@ h1 {
     border-radius: 40px 40px;
    /* padding: 20px 40px;*/
     margin: 20px auto;
-    text-align: center;
+    text-align: center; 
     
-
 }
 .comic-container img {
     width:400px;
     height: 100%;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     border-color: var(--white);
     border-style:solid; 
     border-radius: 40px 40px;
-        
-     
+    display: inline-flex; 
 }
 
 .about-text {
@@ -205,5 +326,6 @@ h1 {
     border-radius: 0px 0px 40px 40px;
     padding: 20px 40px;
     text-align: left;
-
+    list-style-type: none;
+    
 }
