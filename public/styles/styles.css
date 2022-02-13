@@ -219,19 +219,39 @@ header li a {
     color: var(--blue); 
     width: 12.500em;  
 }
+.inside-container-admin table {
+    border-collapse: collapse;
+
+}
 
 .inside-container-admin th {
     text-align: center;
-
+    background-color: #cccccc;
+    border: var(--blue) solid 1px;  
 }
+.addnew-comic {
+    text-align: center;
+    padding-top: 0em;
+    padding-bottom: 2em;
+}
+    
 
 .inside-container-admin td {
     text-align: left;
+    border: var(--blue) solid 1px;
+    
+    
 }
+.grey-row {
+    background-color: #cccccc;
 
-.inside-container-admin button{
+}
+    
+    
+
+.inside-container-admin button {
     background-color: var(--yellow);
-    text-align: center;
+ 
 }
 /*for link colors*/
 /*a:link{
