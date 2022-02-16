@@ -9,6 +9,7 @@ body {
 @media screen and (min-width: 320px) and (max-width: 480px) {
     body {
         background-color: var(--teal);
+        
     }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -20,6 +21,9 @@ body {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     body {
         background-color: var(--blue);
+    }
+    .hamburger-head {
+        display: none;
     }
 }
 :root {
@@ -70,6 +74,15 @@ header li a {
     color: var(--white);
     list-style-type: none;
     text-decoration: none;
+}
+.hamburger-head {
+    color:#ffffff;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0.8rem 1rem;
+
 }
 
 .background-container {
