@@ -265,12 +265,15 @@ header li a {
     background-color: var(--yellow);
  
 }
-/*for link colors*/
+/*for lINK COLORS that need to be added*/
 /*a:link{
     color:var(--blue);
+    font-display: bold;
+    and hightlight links yellow
 }
 a:visted{
-    color: var(--blue);
+    color: var(--white);
+    font-display: no underline
 }*/
 a:hover{
     color:var(--teal);
@@ -305,10 +308,14 @@ a:hover{
 footer {
     display: flex;
     justify-content: space-around;  
-    /*display: inline-block;
       /*border: 2px solid rgb(179, 255, 0);*/
       
 }
+
+/*footer i {
+    display: inline-flex;
+    border: 2px solid red;
+}*/
 
 
 footer img {
