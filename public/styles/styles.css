@@ -6,19 +6,30 @@ body {
     font-family: 'Open Sans', sans-serif;
     
 }
-@media screen and (min-width: 320px) and (max-width: 480px) {
+/*mobile up to tablet size*/
+@media screen and (min-width: 320px) and (max-width: 768px) {
     body {
-        background-color: var(--teal);
-        
+        background-color: var(--teal);   
     }
+    .nav-container li {
+        list-style-type: none;
 }
+.horizontal-scroll {
+    overflow-x: auto;
+}
+}
+/*tablet
 @media screen and (min-width: 481px) and (max-width: 768px) {
     body {
         background-color: var(--light-teal);
     }
+    .nav-container li {
+        list-style-type: none;
+
 }
+}*/
 /*desktop*/
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
     body {
         background-color: var(--blue);
     }
@@ -316,7 +327,6 @@ footer {
     display: inline-flex;
     border: 2px solid red;
 }*/
-
 
 footer img {
     width: 9.375em;    
