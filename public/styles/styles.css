@@ -97,7 +97,7 @@ header img {
  nav.open {
     display: block;
 }
-ul.nav-container li {
+nav ul li {
 	list-style: none;
 } 
 
