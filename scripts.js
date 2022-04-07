@@ -12,54 +12,63 @@
  hamburger.addEventListener('click', ToggleDat);
  
  //HOMEWORK 9 INFO
-//  const comicBooks = [
+ const comicBooks = [
 
-//     {
+    {
 
-//         title: "Fun Home: A Family Tragicomic",
+        title: "Fun Home: A Family Tragicomic",
 
-//         author: "by Alison Bechdel",
+        author: "by Alison Bechdel",
 
-//         rating: "5 stars",
+        rating: "5 stars",
 
-//         href: "./fun-home.+html",
+        href: "./fun-home.+html",
 
-//         imgSrc: "./public/images/fun-home.jpg",
+        imgSrc: "./public/images/fun-home.jpg",
 
-//         imgAlt: "Fun Home: A Family Tragicomic comic book cover",
+        imgAlt: "Fun Home: A Family Tragicomic comic book cover",
 
-//     },
+    },
 
-//     {
+    {
 
-//         title: "Hunter X Hunter Vol. 1",
+        title: "Hunter X Hunter Vol. 1",
 
-//         author: "by Yoshihiro Togashi",
+        author: "by Yoshihiro Togashi",
 
-//         rating: "5 stars",
+        rating: "5 stars",
 
-//         href: "./hunter-x-hunter.html",
+        href: "./hunter-x-hunter.html",
 
-//         imgSrc: "./public/images/hunter-x-hunter.jpg",
+        imgSrc: "./public/images/hunter-x-hunter.jpg",
 
-//         imgAlt: "Hunter X Hunter comic book cover",
+        imgAlt: "Hunter X Hunter comic book cover",
 
-//     },
+    },
 
-//     {
+    {
 
-//         title: "The Walking Dead, Vol. 1: Days Gone Bye",
+        title: "The Walking Dead, Vol. 1: Days Gone Bye",
 
-//         author: "by Robert Kirkman",
+        author: "by Robert Kirkman",
 
-//         rating: "4 stars",
+        rating: "4 stars",
 
-//         href: "./the-walking-dead.html",
+        href: "./the-walking-dead.html",
 
-//         imgSrc: "./public/images/the-walking-dead.jpg",
+        imgSrc: "./public/images/the-walking-dead.jpg",
 
-//         imgAlt: "The Walking Dead, Vol. 1: Days Gone Bye comic book cover",
+        imgAlt: "The Walking Dead, Vol. 1: Days Gone Bye comic book cover",
 
-//     }
+    }
 
-// ]
+]
+
+// STILL FIGURING OUT FUNCTION//
+
+const displayMore = function() {
+    
+}
+
+//THIS IS THE LAST STEP ADDING THE EVENTLISTENER//
+comicBooks.addEventListener('submit', displayMore);
