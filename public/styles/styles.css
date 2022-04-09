@@ -165,7 +165,13 @@ header li a {
     background-color: var(--yellow);
     
 }
-
+/*------------------------*/
+/* HW 9 isolating displaymore button */
+.index-display-more button {
+    background-color: var(--yellow);
+}
+/* maybe need to add a .more class to add the extra comics on toggle? */
+/*-----------------*/
 .inside-container-index {
     display: flex;
     flex-wrap: wrap;

@@ -65,10 +65,11 @@
 ]
 
 // STILL FIGURING OUT FUNCTION//
+// const displayMore = function() {
+//     const moreComics = document.querySelector('');
+//     moreComics.classList.toggle('');
+// }
 
-const displayMore = function() {
-    
-}
 
 //THIS IS THE LAST STEP ADDING THE EVENTLISTENER//
 comicBooks.addEventListener('submit', displayMore);
