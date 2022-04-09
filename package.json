@@ -1,0 +1,32 @@
+{
+  "name": "course-project-rdholmes89",
+  "version": "1.0.0",
+  "description": "<div id=\"top\"></div>",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeSquad-Boston/course-project-RDHolmes89.git"
+  },
+  "author": "rd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeSquad-Boston/course-project-RDHolmes89/issues"
+  },
+  "homepage": "https://github.com/CodeSquad-Boston/course-project-RDHolmes89#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.2.10",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "uuid": "^8.3.2"
+  }
+}
