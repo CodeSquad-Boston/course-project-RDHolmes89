@@ -64,12 +64,21 @@
 
 ]
 // console.log(comicBooks[0]);
-// STILL FIGURING OUT FUNCTION maybe do this a different way with //
-// const displayMore = function() {
-//     const moreComics = document.querySelector('');
-//     moreComics.classList.toggle('');
-// }
+// STILL FIGURING OUT FUNCTION//
+const displayMore = function() {
+    const moreComics = document.getElementById('#showMoreComics');
+    moreComics.comicBooks.appendChild;
+    moreComics.comicBooks[0].appendChild;
+    moreComics.comicBooks[1].appendChild;
+    moreComics.comicBooks[2].appendChild;
 
+
+    
+}
+
+// Clearing the comics that are displayed?
+// document.querySelector('#showMoreComics').value = '';
 
 //THIS IS THE LAST STEP ADDING THE EVENTLISTENER//
-comicBooks.addEventListener('submit', displayMore);
+comicBooks.addEventListener('click', displayMore);
+

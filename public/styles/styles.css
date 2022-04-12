@@ -170,8 +170,7 @@ header li a {
 .index-display-more button {
     background-color: var(--yellow);
 }
-/*Probably over thinking this part.. maybe need to add a .more class to add the extra comics on toggle? */
-/*-----------------*/
+
 .inside-container-index {
     display: flex;
     flex-wrap: wrap;
