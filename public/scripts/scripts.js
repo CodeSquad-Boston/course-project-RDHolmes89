@@ -63,7 +63,7 @@
     }
 
 ]
-
+// console.log(comicBooks[0]);
 // STILL FIGURING OUT FUNCTION maybe do this a different way with //
 // const displayMore = function() {
 //     const moreComics = document.querySelector('');
