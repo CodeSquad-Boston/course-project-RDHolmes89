@@ -65,6 +65,7 @@
 ]
 // console.log(comicBooks[0]);
 // STILL FIGURING OUT FUNCTION//
+//USE A FOR LOOP FOR THIS INSTEAD OF THIS ROCHELLE!////THEN TEST ONCE CSS PATHS ARE CORRECTED IN HTML PAGE FILES//
 const displayMore = function() {
     const moreComics = document.getElementById('#showMoreComics');
     moreComics.comicBooks.appendChild;

@@ -2,30 +2,41 @@ const express = require('express');
 const morgan = require('morgan');
 const app = express();
 const PORT = 3000;
+const path = require('path');
+
+app.set('view engine', 'ejs');
 
 app.use(morgan('combined'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 //ROUTES
 app.get('/', (req, res) => {
-    res.send('This is the homepage.')
+    res.render('pages/index');
 });
 
 app.get('/about', (req, res) => {
-    res.send('This route points to the About page.');
+    res.render('pages/about');
 });
 
 app.get('/login', (req, res) => {
-    res.send('This route points to the Login page.');
+    res.render('pages/login');
 });
 
 app.get('/admin-console', (req, res) => {
-    res.send('This route points to the Admin Console page.');
+    res.render('pages/admin-console');
 });
 
 app.get('/admin-console/create-book', (req, res) => {
-    res.send('This route points to the Create page.');
+    res.render('/admin-console/create-book');
 });
 
+app.get('/books/:id', (req, res) => {
+    res.render('pages/books');
+});
+
+app.get('/admin-console/update-book/:id', (req, res) => {
+    res.render('pages/update');
+});
 
 app.listen(PORT, () => {
     console.log(`Server is running on ${PORT}`);
