@@ -23,11 +23,11 @@ app.get('/login', (req, res) => {
 });
 
 app.get('/admin-console', (req, res) => {
-    res.render('pages/admin-console');
+    res.render('pages/admin');
 });
 
 app.get('/admin-console/create-book', (req, res) => {
-    res.render('/admin-console/create-book');
+    res.render('pages/create');
 });
 
 app.get('/books/:id', (req, res) => {
