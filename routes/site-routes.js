@@ -8,7 +8,7 @@ router.route('/')
 router.route('/about')
     .get(siteCtrl.about);
 
-app.get('/login')
+router.route('/login')
     .get(siteCtrl.login);
 
 module.exports = router;
