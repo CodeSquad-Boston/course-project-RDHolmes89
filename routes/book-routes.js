@@ -1,11 +1,9 @@
 const express = require('express');
-const adminRoutes = require('./admin-routes');
-const bookRoutes = require('./book-routes');
-const siteRoutes = require('./site-routes');
 const router = express.Router();
 
-//routes
-router.use('/books', bookRoutes);
+const bookCtrl = require('../controllers/book-controller');
 
-//dont forget to export router
+router.route('/books/:id')
+    .get(bookCtrl.books);
+
 module.exports = router;
