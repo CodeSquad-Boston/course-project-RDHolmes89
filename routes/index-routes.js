@@ -5,9 +5,12 @@ const siteRoutes = require('./site-routes');
 const router = express.Router();
 
 //routes
-router.use('/', siteRoutes);
-router.use('/books', bookRoutes);
-router.use('/admin-console', adminRoutes);
+router.route('/') 
+.get(siteRoutes.index);
+router.route('/books')
+.get(bookRoutes.books);
+router.route('/admin-console')
+.get(adminRoutes.admin);
 
 //dont forget to export router
 module.exports = router;
