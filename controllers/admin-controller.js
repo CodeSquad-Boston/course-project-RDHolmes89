@@ -2,13 +2,16 @@ const siteData = require('../data/data');
 
 
 module.exports = {
-    admin: app.get('/admin-console', (req, res) => {
+    admin: (req, res) => {
         res.render('pages/admin');
-    }),
-   create: app.get('/admin-console/create-book', (req, res) => {
+    },
+   create: (req, res) => {
     res.render('pages/create');
-}),
-   update: app.get('/admin-console/update-book/:id', (req, res) => {
-    res.render('pages/update');
-})
-}
+},
+update: (req, res) => {
+    const { _id } = req.params;
+    const foundBook = siteData.find(book => book._id === _id);
+    res.render('pages/update', {
+        foundBook: foundBook
+    }); 
+}}
