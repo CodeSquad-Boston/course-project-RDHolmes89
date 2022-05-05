@@ -21,16 +21,28 @@
 
             <div class="inside-container-index">
 
-                <div class="inside-container-index-1">
-                    <a href="#" target="#"><img src="/images/fun-home.jpg"
+        <% comics.foreach (comic => { %>
+            <div class="inside-container-index-1">
+                <a href="#" target="#"><img src="/images/<%= comic.image =%>"
+                    <p><b><i><%= comics.title =%></i></b></p>
+                    <br><b><i>by <%= comics.author =%></i></b></br>
+                    <br><b><i><%= comics.rating =%> stars</i></b></br>
+                    <br><a href="#"><b><i>Details</i></b></a></br> 
+            </div>
+       <% }) %>
+        
+        <!--- info on books pushed up top in order to loop through all comic books to be displayed on books page -->
+
+                <!-- <div class="inside-container-index-1">
+                    <a href="#" target="#"><img src="/images/<%= comics[0].image =%>"
                             alt="Fun Home:A Family Tragicomic by Alison Bechdel comicbook cover"></a>
-                    <p><b><i>Fun Home: A Family Tragicomic</i></b></p>
-                    <br><b><i>by Alison Bechdel</i></b></br>
-                    <br><b><i>5 stars</i></b></br>
+                    <p><b><i><%= comics[0].title =%></i></b></p>
+                    <br><b><i>by <%= comics[0].author =%></i></b></br>
+                    <br><b><i><%= comics[0].rating =%> stars</i></b></br>
                     <br><a href="#"><b><i>Details</i></b></a></br>
 
-                </div>
-                <div class="inside-container-index-2">
+                </div> -->
+                <!-- <div class="inside-container-index-2">
 
                     <a href="#" target="#"><img src="/images/watchmen.jpg"
                             alt="Watchmen by Alan Moore comicbook cover"></a>
@@ -136,7 +148,7 @@
                     <br><b><i>by Octavia E. Butler</i></b></br>
                     <br><b><i>4 stars</i></b></br>
                     <br><a href="#"><b><i>Details</i></b></a></br>
-                </div>
+                </div> -->
 <!--FOR HW 9 COMICBOOK FLEXBOXES TO ADD WHEN CLICKED? ALSO ADDED A CLASS TO ISOLATE DISPLAY MORE BUTTON-->
          <div id="showMoreComics">
              <!-- <div class="more-comics"></div>

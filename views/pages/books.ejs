@@ -4,7 +4,42 @@
 
     <div class="background-container">
 
+        <!-- Should below be in a for loop ALSO? -->
+      <% comicBook.foreach (comicBook => { %>
         <div class="comic-container">
+
+            <a href="./books/<%= comicBook._id =%>"><img src="/images/<%= comicBook.image =%>"
+            <h1><%= comicsBook.title =%></h1>
+
+            <div>
+
+            </div>
+
+            <div class="about-text">
+                <ul>
+
+                    <li><i><%= comicsBook.title =%></i></li><br>
+                    <li><i>Author: <%= comicsBook.author =%></li><br>
+                    <li><i>Publisher: <%= comicsBook.publisher =%></li><br>
+                    <li><i>Genre: <%= comicsBook.genre =%></li><br>
+                    <li><i>Number of pages: <%= comicsBook.pages =%></li><br>
+                    <li><i>Rating:<%= comicsBook.rating =%></li><br>
+
+                </ul>
+
+                </ul>
+
+                <p><a href="#">Synopsis:</a><%= comics.synopsis =%></p><br>
+
+            </div>
+
+
+        </div>
+      })  
+        
+        
+        
+        <!-- <div class="comic-container">
 
             <h1>Queer: A Graphic History</h1>
 
@@ -46,7 +81,7 @@
             </div>
 
 
-        </div>
+        </div> -->
     </div>
     </div>
 
