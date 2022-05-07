@@ -10,13 +10,12 @@
 
             <div class="horizontal-scroll">
                 
-                <%- include('../partials/book-listing.ejs') -%>
 
-                <!-- <div class="inside-container-admin">
+                <div class="inside-container-admin">
                     <div class="addnew-comic"> <a href="./admin-console/create-book"><button type="button">ADD NEW COMIC</button></a></div>
 
                     <table>
-                        <thead>
+                       <thead>
                             <tr>
                                 <th>COMIC TITLE</th>
                                 <th>EDIT</th>
@@ -24,7 +23,9 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            
+                            <%- include('../partials/book-listing.ejs') -%> 
+                            <!-- <tr>
                                 <td>Batman: The Dark Knight Returns</td>
                                 <td><button type="button">EDIT</button></td>
                                 <td><button type="button">DELETE</button></td>
@@ -83,7 +84,7 @@
                                 <td>Watchemen</td>
                                 <td><button type="button">EDIT</button></td>
                                 <td><button type="button">DELETE</button></td>
-                            </tr>
+                            </tr> -->
                         </tbody>
                     </table>
 
