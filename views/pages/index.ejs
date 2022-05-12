@@ -23,10 +23,10 @@
 
         <% comics.foreach (comic => { %>
             <div class="inside-container-index-1">
-                <a href="#" target="#"><img src="/images/<%= comic.image =%>"
-                    <p><b><i><%= comics.title =%></i></b></p>
-                    <br><b><i>by <%= comics.author =%></i></b></br>
-                    <br><b><i><%= comics.rating =%> stars</i></b></br>
+                <a href="#" target="#"><img src="/images/<%= comic.image %>">
+                    <p><b><i><%= comics.title %></i></b></p>
+                    <br><b><i>by <%= comics.author %></i></b></br>
+                    <br><b><i><%= comics.rating %> stars</i></b></br>
                     <br><a href="#"><b><i>Details</i></b></a></br> 
             </div>
        <% }) %>
