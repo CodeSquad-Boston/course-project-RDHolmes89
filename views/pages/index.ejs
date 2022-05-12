@@ -21,7 +21,7 @@
 
             <div class="inside-container-index">
 
-        <% comics.foreach (comic => { %>
+        <% comics.forEach(comic => { %>
             <div class="inside-container-index-1">
                 <a href="#" target="#"><img src="/images/<%= comic.image %>">
                     <p><b><i><%= comics.title %></i></b></p>
@@ -34,11 +34,11 @@
         <!--- info on books pushed up top in order to loop through all comic books to be displayed on books page -->
 
                 <!-- <div class="inside-container-index-1">
-                    <a href="#" target="#"><img src="/images/<%= comics[0].image =%>"
+                    <a href="#" target="#"><img src="/images/<%# comics[0].image %>"
                             alt="Fun Home:A Family Tragicomic by Alison Bechdel comicbook cover"></a>
-                    <p><b><i><%= comics[0].title =%></i></b></p>
-                    <br><b><i>by <%= comics[0].author =%></i></b></br>
-                    <br><b><i><%= comics[0].rating =%> stars</i></b></br>
+                    <p><b><i><%# comics[0].title %></i></b></p>
+                    <br><b><i>by <%# comics[0].author %></i></b></br>
+                    <br><b><i><%# comics[0].rating %> stars</i></b></br>
                     <br><a href="#"><b><i>Details</i></b></a></br>
 
                 </div> -->
