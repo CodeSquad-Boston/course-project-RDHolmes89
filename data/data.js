@@ -4,7 +4,7 @@ const comicBookId = uuid();
 
 module.exports = [
   {  
-    _id: comicBookId,
+    _id: uuid(),
     title: "Fun Home: A Family Tragicomic",
     author: "Alison Bechdel",
     publisher: "Mariner Books",
@@ -15,7 +15,7 @@ module.exports = [
     image: "fun-home.jpg"
   },
   {
-    _id: comicBookId,
+    _id: uuid(),
     title: "Watchmen",
     author: "Alan Moore",
     publisher: "DC Comics",
@@ -26,7 +26,7 @@ module.exports = [
     image: "watchmen.jpg"
   },
   {
-    _id: comicBookId,
+    _id: uuid(),
     title: "Hunter X Hunter Vol. 1",
     author: "Yoshihiro Togashi",
     publisher: "VIZ Media LLC",
@@ -37,7 +37,7 @@ module.exports = [
     image: "hunter-x-hunter.jpg"
   },
   {
-    _id: comicBookId, 
+    _id: uuid(), 
     title: "Lumberjanes Vol. 1",
     author: "Noelle Stevenson",
     publisher: "BOOM! Box",
@@ -48,7 +48,7 @@ module.exports = [
     image: "lumberjanes.jpg"
   },
   {
-    _id: comicBookId, 
+    _id: uuid(), 
     title: "One Piece Vol. 1: Romance Dawn",
     author: "Eiichiro Oda",
     publisher: "VIZ Media LLC",
@@ -59,7 +59,7 @@ module.exports = [
     image: "one-piece.jpg"
   },
   {
-    _id: comicBookId, 
+    _id: uuid(), 
     title: "Wake: The Hidden History of Women-Led Slave Revolts",
     author: "Rebecca Hall",
     publisher: "Simon Schuster",
@@ -70,7 +70,7 @@ module.exports = [
     image: "wake.jpg"
   },
   {
-    _id: comicBookId,
+    _id: uuid(),
     title: "Black Panther: A Nation Under Our Feet Book 1",
     author: "Ta-Nehisi Coates",
     publisher: "Marvel",
@@ -81,7 +81,7 @@ module.exports = [
     image: "black-panther.jpg"
   },
   {
-    _id: comicBookId,
+    _id: uuid(),
     title: "The Walking Dead, Vol. 1: Days Gone Bye",
     author: "Robert Kirkman",
     publisher: "Image Comics",
@@ -92,7 +92,7 @@ module.exports = [
     image: "the-walking-dead.jpg"
   },
   {
-    _id: comicBookId,
+    _id: uuid(),
     title: "March: Book One",
     author: "John Lewis",
     publisher: "Top Shelf Productions",
@@ -103,7 +103,7 @@ module.exports = [
     image: "march.jpg"
   },
   {
-    _id: comicBookId,
+    _id: uuid(),
     title: "Batman: The Dark Knight Returns",
     author: "Frank Miller",
     publisher: "DC Comics",
@@ -114,7 +114,7 @@ module.exports = [
     image: "batman.jpg"
   },
   {
-    _id: comicBookId,
+    _id: uuid(),
     title: "Queer: A Graphic History",
     author: "Meg-John Barker",
     publisher: "Icon Books",
@@ -125,7 +125,7 @@ module.exports = [
     image: "queer.jpg"
   },
   {
-    _id: comicBookId,
+    _id: uuid(),
     title: "Parable of the Sower",
     author: "Octavia E. Butler",
     publisher: "Harry N. Abrams",

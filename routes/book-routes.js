@@ -6,7 +6,7 @@ const bookCtrl = require('../controllers/book-controller');
 router.route('/')
     .post(bookCtrl.book_create);
 //localhost3000/books/oejfkldgheifjdakfnk
-router.route('/:id')
+router.route('/:_id')
     .get(bookCtrl.books);
 
 module.exports = router;
