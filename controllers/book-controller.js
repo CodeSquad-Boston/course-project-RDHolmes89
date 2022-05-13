@@ -1,7 +1,7 @@
 const data = require('../data/data');
 const siteData = require('../data/data');
 const { v4:uuid } = require('uuid');
-const comicBookId = uuid();
+// const comicBookId = uuid();
 
 
 // module.exports = {
@@ -19,7 +19,7 @@ module.exports = {
         }); 
 },
     book_create: (req, res) => {
-        const { _id = comicBookId, title, author, publisher, genre, pages, rating, synopsis, image} = req.body;
+        const { _id = uuid(), title, author, publisher, genre, pages, rating, synopsis, image} = req.body;
         siteData.push({_id, title,author, publisher, genre, pages, rating, synopsis, image}); {
         res.redirect('/admin-console');
         } 
