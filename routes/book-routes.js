@@ -7,6 +7,8 @@ router.route('/')
     .post(bookCtrl.book_create);
 //localhost3000/books/oejfkldgheifjdakfnk
 router.route('/:_id')
-    .get(bookCtrl.books);
+    .get(bookCtrl.books)
+    .put(bookCtrl.book_update)
+    .delete(bookCtrl.book_delete)
 
 module.exports = router;
