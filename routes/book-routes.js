@@ -9,6 +9,6 @@ router.route('/')
 router.route('/:_id')
     .get(bookCtrl.books)
     .put(bookCtrl.book_update)
-    .delete(bookCtrl.book_delete)
+    .delete(bookCtrl.book_delete);
 
 module.exports = router;

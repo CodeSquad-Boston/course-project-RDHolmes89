@@ -8,7 +8,7 @@ router.route('/')
 router.route('/create-book')
     .get(adminCtrl.create);
 
-router.route('/update-book/:id')
+router.route('/update-book/:_id')
     .get(adminCtrl.update);
 
 module.exports = router;

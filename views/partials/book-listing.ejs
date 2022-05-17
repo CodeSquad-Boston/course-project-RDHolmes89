@@ -1,7 +1,7 @@
 <% for (singleComic of comics) { %>
     <tr>
     <td><%= singleComic.title %></td>
-    <td><form action="books/<%= singleComic._id %>?_method=PUT" method="POST"><a href="/admin-console/update-book/:id"><button type="button">EDIT</button></a></form></td>
-    <td><form action="books/<%= singleComic._id %>?_method=DELETE" method="POST"><a href="/admin-console/update-book/:id"><button type="button">DELETE</button></a></form></td>
+    <td><a href="/admin-console/update-book/<%= singleComic._id %>"><button type="button">EDIT</button></a></td>
+    <td><a href="/admin-console/update-book/<%= singleComic._id %>"><button type="button">DELETE</button></a></td>
 </tr> 
 <% } %>
