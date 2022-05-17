@@ -4,10 +4,13 @@ const app = express();
 const PORT = 3000;
 const path = require('path');
 const methodOverride = require('method-override');
-const routes = require('./routes/index-routes')
+const routes = require('./routes/index-routes');
+
 
 
 app.set('view engine', 'ejs');
+
+require('./config/connection');
 
 app.use(morgan('combined'));
 app.use(express.static(path.join(__dirname, 'public')));
