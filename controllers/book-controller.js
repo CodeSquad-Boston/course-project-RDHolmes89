@@ -29,7 +29,7 @@ book_update: (request, response) => {
 
     const {title, author, publisher, genre, pages, rating, synopsis, image} = request.body;
 
-    const foundBook = booksData.find(book => book._id === String(_id));
+    const foundBook = siteData.find(book => book._id === String(_id));
 
     foundBook.title = title;
     foundBook.author = author;
