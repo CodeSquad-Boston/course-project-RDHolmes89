@@ -1,6 +1,6 @@
-const siteData = require('../data/data');
-const { v4:uuid } = require('uuid');
-// const comicBookId = uuid();
+// const siteData = require('../data/data');
+// const { v4:uuid } = require('uuid');
+const Comic = require('../models/comic-model');
 
 
 // module.exports = {
