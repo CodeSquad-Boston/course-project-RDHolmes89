@@ -1,5 +1,6 @@
 // const siteData = require('../data/data');
 // const { v4:uuid } = require('uuid');
+// dont think ill need above requirements anymore
 const Comic = require('../models/comic-model');
 
 
