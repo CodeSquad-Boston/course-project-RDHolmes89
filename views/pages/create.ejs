@@ -11,9 +11,9 @@
 
                 <form action="/books" method="POST">
                     <label for="title">Title:</label>
-                    <input type="text" id="title" name="title" placeholder="Title"><br><br>
+                    <input type="text" id="title" name="title" placeholder="Title" min="1" max="10" required /><br><br>
                     <label for="author">Author:</label>
-                    <input type="text" id="author" name="author" placeholder="Author"><br><br>
+                    <input type="text" id="author" name="author" placeholder="Author" min="1" max="10" required /><br><br>
                     <label for="Publisher">Publisher</label>
 
                     <select name="Publisher" id="Publisher">

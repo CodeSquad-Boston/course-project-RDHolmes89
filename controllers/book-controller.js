@@ -4,12 +4,6 @@
 const Comic = require('../models/comic-model');
 
 
-// module.exports = {
-//     books: app.get('/books/:id', (req, res) => {
-//         res.render('pages/books');
-//     })
-
-// }
 module.exports = {
     books: (req, res) => {
         const { _id } = req.params;
