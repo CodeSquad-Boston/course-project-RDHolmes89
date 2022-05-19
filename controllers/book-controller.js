@@ -13,16 +13,30 @@ const Comic = require('../models/comic-model');
 module.exports = {
     books: (req, res) => {
         const { _id } = req.params;
-        const foundBook = siteData.find(book => book._id === _id);
-        res.render('pages/books', {
-            foundBook: foundBook
+        Comic.findOne({_id: _id}, (error, foundComic) => {
+            if(error) {     
+            } else {
+                res.render('pages/books', {
+                    foundBook: foundComic
+        });
+    }
         }); 
 },
     book_create: (req, res) => {
-        const { _id = uuid(), title, author, publisher, genre, pages, rating, synopsis, image} = req.body;
-        siteData.push({_id, title,author, publisher, genre, pages, rating, synopsis, image}); {
+        const {title, author, publisher, genre, pages, rating, synopsis, image} = req.body;
+        const newComic = new Comic ({
+            title: title,
+            author: author,
+            publisher: publisher,
+            genre: genre,
+            pages: pages,
+            rating: rating,
+            synopsis: synopsis,
+            image: image
+        });
+        newComic.save();
         res.redirect('/admin-console');
-        } 
+    
 },
 book_update: (request, response) => {
 
