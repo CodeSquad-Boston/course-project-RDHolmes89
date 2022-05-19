@@ -4,12 +4,14 @@ const comicSchema = new Schema({
    title: {
        type: String,
        required: [true, 'Title is required'],
-       minlength: [1, 'Minimum length for the title is 1 character.']
+       min: [1, 'Minimum length for the title is 1 character.'],
+       max: [10, 'Minimum length for the title is 1 character.']
    },
    author: {
     type: String,
     required: [true, 'Author is required'],
-    minlength: [1, 'Minimum length for the author is 1 character.']
+    min: [1, 'Minimum length for the author is 1 character.'],
+    max: [10, 'Minimum length for the title is 1 character.']
 },
 publisher: {
     type: String,
