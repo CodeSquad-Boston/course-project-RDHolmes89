@@ -308,6 +308,12 @@ header li a {
     background-color: var(--yellow);
  
 }
+.delete-yellow {
+    background-color: var(--yellow);
+}
+.edit-blue {
+    background-color: var(--blue);  
+}
 /*for lINK COLORS that need to be added*/
 /*a:link{
     color:var(--blue);
