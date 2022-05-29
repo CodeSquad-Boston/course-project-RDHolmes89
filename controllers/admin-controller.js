@@ -1,4 +1,3 @@
-// const siteData = require('../data/data');
 const Comic = require('../models/comic-model');
 
 
