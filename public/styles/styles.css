@@ -43,10 +43,7 @@ body {
     .hamburger-head {
         display: none;
     }
-    .nav-container li {
-        list-style-type: none;
-        /* display: inline-block; */
-    }
+    
 
 }
 :root {
@@ -103,7 +100,6 @@ header img {
 }
 nav ul li {
 	list-style: none;
-    display: block;
 } 
 
 
