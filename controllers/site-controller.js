@@ -29,7 +29,7 @@ module.exports = {
         password: password
     })
     req.login(user, (error) => {
-      if (error) {
+      if(error) {
         console.log(`The error at login is: ${error}`);
       } else {
         passport.authenticate('local')(req, res, () => {
@@ -50,7 +50,7 @@ register_post: (req, res) => {
             passport.authenticate('local')(req, res, () => {
                 res.redirect('/admin-console');
             });
-        }
+        };
     });
 },
 google_get: passport.authenticate('google', {
