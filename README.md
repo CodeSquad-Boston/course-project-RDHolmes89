@@ -2,8 +2,9 @@
 
 <!-- PROJECT LOGO -->
 <div align="center">
-<img src="/course-project-RDHolmes89/public/images/CodeSquad-Comics-logo.png"
-            alt="CodeSquad Comics Logo">
+            
+![CodeSquad Comics](https://github.com/CodeSquad-Boston/course-project-RDHolmes89/blob/main/public/images/CodeSquad-Comics-logo.png)
+            
   </div>
 <br />
 
