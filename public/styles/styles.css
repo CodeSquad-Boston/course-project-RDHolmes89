@@ -18,9 +18,6 @@ body {
     .horizontal-scroll {
     overflow-x: auto;
 }
-/*nav {
-    display: block;
-}*/
 
 }
 
@@ -34,11 +31,6 @@ body {
     .hamburger-head {
         display: none;
     }
-
-    nav {
-        display: block;
-    }
-
 }
 :root {
     --teal: #006b6b;
