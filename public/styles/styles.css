@@ -23,16 +23,7 @@ body {
 }*/
 
 }
-/*tablet*/
- /* @media screen and (min-width: 768px) {
-    body {
-        background-color: var(--light-teal);
-    }
-    .nav-container li {
-        list-style-type: none;
 
-}
-} */
 /*desktop*/
 @media screen and (min-width: 1024px) {
     body {
@@ -43,7 +34,10 @@ body {
     .hamburger-head {
         display: none;
     }
-    
+
+    nav {
+        display: block;
+    }
 
 }
 :root {
