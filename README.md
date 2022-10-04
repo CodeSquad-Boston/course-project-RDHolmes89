@@ -103,7 +103,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 Your Name - [R.D.Holmes]([https://www.linkedin.com/in/rochelle-holmes-76bb0b23a](https://www.linkedin.com/in/rochelle-holmes-76bb0b23a) - rochelleholmes89@gmail.com
 
-Project Link: [https://codesquadcomic.herokuapp.com](https://github.com/RDHolmes89/Personal-project.git)
+Project Link: [https://codesquadcomic.herokuapp.com](https://codesquadcomic.herokuapp.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
