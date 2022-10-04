@@ -8,7 +8,7 @@ body {
     
 }
 /*mobile up to tablet size*/
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
     body {
         background-color: var(--teal);   
     }
@@ -22,7 +22,7 @@ body {
 }
 
 /*desktop*/
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
     body {
         background-color: var(--blue);
         
@@ -83,11 +83,11 @@ header img {
 }
 /*when the nav has the class of open, display the menu items/links*/
  nav.open {
-    /*display: block;*/
-    width: 100%;
+    display: block;
+    /*width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-end;*/
 }
 nav ul li {
 	list-style: none;
