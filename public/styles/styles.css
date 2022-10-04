@@ -83,11 +83,11 @@ header img {
 }
 /*when the nav has the class of open, display the menu items/links*/
  nav.open {
-    display: block;
-    /*width: 100%;
+    /*display: block;*/
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;*/
+    align-items: flex-end;
 }
 nav ul li {
 	list-style: none;
