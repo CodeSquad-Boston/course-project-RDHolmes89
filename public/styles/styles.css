@@ -31,6 +31,7 @@ body {
     .hamburger-head {
         display: none;
     }
+    
 }
 :root {
     --teal: #006b6b;
@@ -82,7 +83,11 @@ header img {
 }
 /*when the nav has the class of open, display the menu items/links*/
  nav.open {
-    display: block;
+    /*display: block;*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 nav ul li {
 	list-style: none;
