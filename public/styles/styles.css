@@ -78,9 +78,9 @@ header img {
 /*-------ADDED FOR HOMEWORK8--------*/
 
 /*Hide navbar by default*/
- nav {
+ /*nav {
     display: none;
-}
+}/*
 /*when the nav has the class of open, display the menu items/links*/
  nav.open {
     /*display: block;*/
