@@ -168,6 +168,7 @@ header li a {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
+    color:var(--blue);
     
 }
 
@@ -406,9 +407,9 @@ h1 {
     border-radius: 0px 0px 2.500em 2.500em;
     padding: 1.250em 2.500em;
     text-align: left; 
-    color:#000000;
+    color:var(--black);
 }
 .about-text li {
     list-style-type: none;
-    color:#000000;
+    color:var(--black);
 }
