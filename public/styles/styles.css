@@ -40,6 +40,7 @@ body {
     --blue: #063c5e;
     --grey: #c2c2c2;
     --white: #ffffff;
+    --black: #000000;
     font-size: 1.4em;
 }
 
@@ -404,8 +405,10 @@ h1 {
     border-color: var(--yellow);
     border-radius: 0px 0px 2.500em 2.500em;
     padding: 1.250em 2.500em;
-    text-align: left;  
+    text-align: left; 
+    color:#000000;
 }
 .about-text li {
     list-style-type: none;
+    color:#000000;
 }
