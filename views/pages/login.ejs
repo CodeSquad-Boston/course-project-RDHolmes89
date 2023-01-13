@@ -1,0 +1,28 @@
+<%- include('../partials/head') -%>
+
+<%- include('../partials/nav') -%>
+
+    <div class="background-container">
+
+        <div class="display-container">
+
+            <h2>LOGIN</h2>
+            <div class="inside-container">
+                <form action="/login" method="POST">
+                    <label for="email"><b>Email address:<b></label>
+                    <input type="text" id="email" name="email" value="Email" required /><br><br>
+                    <label for="pass"><b>Password:<b></label>
+                    <input type="text" id="pass" name="pass" value="Password" minlength="10" required /><br><br>
+                    <button type="submit">Submit</button><br>
+                    <button>
+                        <a href="/auth/google" role="button">Sign In with Google</a>
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    <%- include('../partials/footer') -%>

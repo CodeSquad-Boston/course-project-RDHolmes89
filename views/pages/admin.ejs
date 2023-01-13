@@ -1,0 +1,42 @@
+<%- include('../partials/head') -%>
+
+<%- include('../partials/nav') -%>
+
+    <div class="background-container">
+
+        <div class="display-container">
+            <button>
+                <a href="/logout/" role="button">LOG OUT</a>
+            </button>
+
+            <H2>ADMIN PAGE</H2>
+
+            <div class="horizontal-scroll">
+                
+
+                <div class="inside-container-admin">
+                    <div class="addnew-comic"> <a href="/admin-console/create-book"><button type="button">ADD NEW COMIC</button></a></div>
+
+                    <table>
+                       <thead>
+                            <tr>
+                                <th>COMIC TITLE</th>
+                                <th>EDIT</th>
+                                <th>DELETE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <%- include('../partials/book-listing.ejs') -%> 
+                            
+                        </tbody>
+                    </table>
+
+                </div> -->
+            </div>
+
+        </div>
+
+    </div>
+
+    <%- include('../partials/footer') -%>

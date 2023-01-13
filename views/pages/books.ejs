@@ -1,0 +1,39 @@
+<%- include('../partials/head') -%>
+
+<%- include('../partials/nav') -%>
+
+    <div class="background-container">
+
+        <div class="comic-container">
+
+            <a href="/books/<%= foundBook._id %>"><img src="/images/<%= foundBook.image %>">
+            <h1><%= foundBook.title %></h1>
+
+            <div>
+
+            </div>
+
+            <div class="about-text">
+                <ul>
+
+                    <li><i><%= foundBook.title %></i></li><br>
+                    <li><i>Author: <%= foundBook.author %></li><br>
+                    <li><i>Publisher: <%= foundBook.publisher %></li><br>
+                    <li><i>Genre: <%= foundBook.genre %></li><br>
+                    <li><i>Number of pages: <%= foundBook.pages %></li><br>
+                    <li><i>Rating:<%= foundBook.rating %></li><br>
+
+                </ul>
+
+                </ul>
+
+                <p><a href="#">Synopsis:</a><%= foundBook.synopsis %></p><br>
+
+            </div>
+
+
+        </div>
+     
+    </div>
+
+    <%- include('../partials/footer') -%>

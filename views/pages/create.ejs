@@ -1,0 +1,55 @@
+<%- include('../partials/head') -%>
+
+<%- include('../partials/nav') -%>
+
+    <div class="background-container">
+
+        <div class="display-container">
+
+            <h2>CREATE NEW COMIC</h2>
+            <div class="inside-container">
+
+                <form action="/books" method="POST">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" placeholder="Title" min="1" max="10" required /><br><br>
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author" placeholder="Author" min="1" max="10" required /><br><br>
+                    <label for="Publisher">Publisher</label>
+
+                    <select name="Publisher" id="Publisher">
+                        <option value="">Select</option>
+                        <option value="">BOOM! Box</option>
+                        <option value="">DC Comics</option>
+                        <option value="">Harry N. Abrams</option>
+                        <option value="">Icon Books</option>
+                        <option value="">Image Comics</option>
+                        <option value="">Marvel</option>
+                        <option value="">Simon & Schuster</option>
+                        <option value="">Top Shelf Productions</option>
+                        <option value="">VIZ Media LLC</option>
+                    </select><br><br>
+
+                    <label for="genre">Genre:</label>
+                    <input type="text" id="genre" name="genre" placeholder="Genre"><br><br>
+                    <label for="number">Number of pages:</label>
+                    <input type="text" id="number" name="number" placeholder="Number of pages"><br><br>
+                    <label for="rating">Rating:</label>
+                    <input type="text" id="rating" name="rating" value=""><br><br>
+                    <label for="synopsis">Synopsis:</label>
+
+                    <textarea name="synopsis" placeholder=Synopsis></textarea><br><br>
+
+                    <label for="image">Image:</label><br><br>
+                    <input type="text" id="image" name="image" value=""><br><br>
+                   
+
+                    <button type="submit">Submit</button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <%- include('../partials/footer') -%>
